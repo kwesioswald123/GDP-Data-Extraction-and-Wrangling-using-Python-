@@ -13,13 +13,25 @@ STEPS I TOOK
 
 Data Collection – I extracted tables from the webpage using Pandas and retain table number 3 as the required dataframe.
 
+
+
+
 Data Cleaning – I replace the column headers with column numbers, retained columns with index 0 and 2 (name of country and value of GDP quoted by IMF), and also retained the Rows with index 1 to 10, indicating the top 10 economies of the world.
 
+
+
+
 Data Transformation – I assigned column names as "Country" and "GDP (Million USD)".
+
 Changed the data type of the 'GDP (Million USD)' column to integer. Using astype() method.
 Converted the GDP value in Million USD to Billion USD
 Used numpy.round() method to round the value to 2 decimal places.
 Renamed the column header from 'GDP (Million USD)' to 'GDP (Billion USD)'
+
+Finally Loaded the DataFrame to a CSV file named "Largest_economies.csv"
+
+
+
 
 
 Validation – Making sure the cleaned dataset is accurate, consistent, and ready for analysis.
